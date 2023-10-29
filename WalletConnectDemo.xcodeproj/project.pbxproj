@@ -21,6 +21,7 @@
 		A7CA051E2AEE80E5003B7774 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = A7CA051D2AEE80E5003B7774 /* Web3 */; };
 		A7CA05202AEE80E5003B7774 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = A7CA051F2AEE80E5003B7774 /* Web3ContractABI */; };
 		A7CA05222AEE80E5003B7774 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7CA05212AEE80E5003B7774 /* Web3PromiseKit */; };
+		A7CA05262AEE816B003B7774 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA05252AEE816B003B7774 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		A7CA05012AEE64B7003B7774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CA05042AEE64B7003B7774 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7CA05172AEE667A003B7774 /* WalletConnectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectManager.swift; sourceTree = SOURCE_ROOT; };
+		A7CA05232AEE812B003B7774 /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		A7CA05252AEE816B003B7774 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A7CA05272AEE830C003B7774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,9 @@
 				A7CA04FF2AEE64B6003B7774 /* ContentView.swift */,
 				A7CA05012AEE64B7003B7774 /* Assets.xcassets */,
 				A7CA05032AEE64B7003B7774 /* Preview Content */,
+				A7CA05232AEE812B003B7774 /* Configuration.xcconfig */,
+				A7CA05252AEE816B003B7774 /* Config.swift */,
+				A7CA05272AEE830C003B7774 /* Info.plist */,
 			);
 			path = WalletConnectDemo;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7CA05182AEE667A003B7774 /* WalletConnectManager.swift in Sources */,
+				A7CA05262AEE816B003B7774 /* Config.swift in Sources */,
 				A7CA05002AEE64B6003B7774 /* ContentView.swift in Sources */,
 				A7CA04FE2AEE64B6003B7774 /* WalletConnectDemoApp.swift in Sources */,
 			);
@@ -193,6 +201,7 @@
 /* Begin XCBuildConfiguration section */
 		A7CA05062AEE64B7003B7774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7CA05232AEE812B003B7774 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -256,6 +265,7 @@
 		};
 		A7CA05072AEE64B7003B7774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7CA05232AEE812B003B7774 /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -312,6 +322,7 @@
 		};
 		A7CA05092AEE64B7003B7774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7CA05232AEE812B003B7774 /* Configuration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +332,7 @@
 				DEVELOPMENT_TEAM = AK62F95LBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalletConnectDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +353,7 @@
 		};
 		A7CA050A2AEE64B7003B7774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7CA05232AEE812B003B7774 /* Configuration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +363,7 @@
 				DEVELOPMENT_TEAM = AK62F95LBK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalletConnectDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
