@@ -8,7 +8,7 @@
 import Foundation
 
 struct Config {
-    static func projectId() -> String {
+    static var projectId: String {
         guard let projectId = config(for: "PROJECT_ID"), projectId.isEmpty == false else {
             fatalError("PROJECT_ID is not set")
         }
