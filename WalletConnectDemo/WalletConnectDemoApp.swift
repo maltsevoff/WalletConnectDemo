@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct WalletConnectDemoApp: App {
+
+    init() {
+        WalletConnectManager.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
