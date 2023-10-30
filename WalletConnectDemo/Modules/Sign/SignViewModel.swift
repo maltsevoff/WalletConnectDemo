@@ -36,7 +36,7 @@ enum SignState {
                 try await signConnection.connect()
                 await signConnection.redirectToWallet()
             } catch {
-
+                print(error.localizedDescription)
             }
         }
     }
@@ -44,6 +44,7 @@ enum SignState {
     func sign() {
         Task {
             await signConnection.sign()
+            await signConnection.redirectToWallet()
         }
     }
 }

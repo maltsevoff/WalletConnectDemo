@@ -94,7 +94,12 @@ class SignConnection {
         Sign.instance.sessionResponsePublisher
             .receive(on: DispatchQueue.main)
             .sink { [weak self] response in
-
+                switch response.result {
+                case .response:
+                    self?.onSign?()
+                case .error(let error):
+                    print(error.localizedDescription)
+                }
             }
             .store(in: &cancellables)
     }

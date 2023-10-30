@@ -22,20 +22,38 @@ struct SignView: View {
     }
 
     private var connectedView: some View {
-        Text("Connected wallet: \(viewModel.address)")
-    }
+        VStack(spacing: 16) {
+            Text("Connected")
+                .font(.title)
 
-    private var disconnectedView: some View {
-        Button("Connect") {
-            viewModel.connect()
+            Text("\(viewModel.address)")
+
+            Button("Sign") {
+                viewModel.sign()
+            }
+            .buttonStyle(.borderedProminent)
         }
     }
 
+    private var disconnectedView: some View {
+        Button("Connect wallet") {
+            viewModel.connect()
+        }
+        .buttonStyle(.borderedProminent)
+    }
+
     private var signedView: some View {
-        Text("Signed")
+        VStack(spacing: 16) {
+            Text("Connected & Signed")
+                .font(.title)
+
+            Text("\(viewModel.address)")
+        }
     }
 }
 
 #Preview {
-    SignView(viewModel: SignViewModel())
+    let viewModel = SignViewModel()
+    viewModel.state = .disconnected
+    return SignView(viewModel: viewModel)
 }
