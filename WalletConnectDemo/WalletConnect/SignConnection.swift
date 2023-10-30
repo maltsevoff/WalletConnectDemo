@@ -47,7 +47,6 @@ class SignConnection {
             try await Sign.instance.connect(requiredNamespaces: requiredNamespaces,
                                             // metamask doesn't handle a request without these dummy values
                                             optionalNamespaces: [:],
-                                            sessionProperties: ["key": "value"],
                                             topic: pairUri.topic)
         } catch {
             throw error
