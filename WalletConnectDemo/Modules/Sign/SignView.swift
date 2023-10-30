@@ -11,12 +11,29 @@ struct SignView: View {
     let viewModel: SignViewModel
 
     var body: some View {
-        VStack {
-            Button("Connect") {
-                
-            }
+
+        switch viewModel.state {
+        case .disconnected:
+            disconnectedView
+        case .connected:
+            connectedView
+        case .signed:
+            signedView
         }
-        .padding()
+    }
+
+    private var connectedView: some View {
+        Text("Connected wallet: \(viewModel.address)")
+    }
+
+    private var disconnectedView: some View {
+        Button("Connect") {
+            viewModel.connect()
+        }
+    }
+
+    private var signedView: some View {
+        Text("Signed")
     }
 }
 

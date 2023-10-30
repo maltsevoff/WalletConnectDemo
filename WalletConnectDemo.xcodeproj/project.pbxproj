@@ -25,6 +25,7 @@
 		A7CA052A2AEE8B3E003B7774 /* DefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA05292AEE8B3E003B7774 /* DefaultSocketFactory.swift */; };
 		A7CA052E2AEE8D64003B7774 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA052D2AEE8D64003B7774 /* SignView.swift */; };
 		A7CA05302AEE8E6C003B7774 /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA052F2AEE8E6C003B7774 /* SignViewModel.swift */; };
+		A7CA05322AEEE0A6003B7774 /* SignConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA05312AEEE0A6003B7774 /* SignConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A7CA05292AEE8B3E003B7774 /* DefaultSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSocketFactory.swift; sourceTree = "<group>"; };
 		A7CA052D2AEE8D64003B7774 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		A7CA052F2AEE8E6C003B7774 /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
+		A7CA05312AEEE0A6003B7774 /* SignConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				A7CA05172AEE667A003B7774 /* WalletConnectManager.swift */,
 				A7CA05292AEE8B3E003B7774 /* DefaultSocketFactory.swift */,
+				A7CA05312AEEE0A6003B7774 /* SignConnection.swift */,
 			);
 			path = WalletConnect;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CA05322AEEE0A6003B7774 /* SignConnection.swift in Sources */,
 				A7CA05182AEE667A003B7774 /* WalletConnectManager.swift in Sources */,
 				A7CA05302AEE8E6C003B7774 /* SignViewModel.swift in Sources */,
 				A7CA052A2AEE8B3E003B7774 /* DefaultSocketFactory.swift in Sources */,
