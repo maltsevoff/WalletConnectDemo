@@ -69,11 +69,13 @@ class SignConnection {
         try? await Sign.instance.request(params: request)
     }
 
-    func redirectToWallet() {
+    func redirectToWallet() async {
         guard let deeplinkUrl = pairUri?.deeplinkUri,
               let url = URL(string: "metamask://wc?uri=\(deeplinkUrl)") else { return }
 
-        UIApplication.shared.open(url)
+        await MainActor.run(body: {
+            UIApplication.shared.open(url)
+        })
     }
 
     // MARK: - Private

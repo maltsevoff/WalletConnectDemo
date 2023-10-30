@@ -11,7 +11,6 @@ struct SignView: View {
     let viewModel: SignViewModel
 
     var body: some View {
-
         switch viewModel.state {
         case .disconnected:
             disconnectedView

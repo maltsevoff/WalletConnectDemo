@@ -34,7 +34,7 @@ enum SignState {
         Task {
             do {
                 try await signConnection.connect()
-                signConnection.redirectToWallet()
+                await signConnection.redirectToWallet()
             } catch {
 
             }
