@@ -14,6 +14,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Sign", systemImage: "signature")
                 }
+            AuthView(viewModel: .init())
+                .tabItem {
+                    Label("Auth", systemImage: "person")
+                }
         }
     }
 }

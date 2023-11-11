@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74314A32B001C6700287437 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74314A22B001C6700287437 /* AuthView.swift */; };
+		A74314A52B001C7100287437 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74314A42B001C7100287437 /* AuthViewModel.swift */; };
+		A74314A72B001D3900287437 /* AuthConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74314A62B001D3900287437 /* AuthConnection.swift */; };
+		A74314A92B00251300287437 /* DefaultCryptoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74314A82B00251300287437 /* DefaultCryptoProvider.swift */; };
 		A7CA04FE2AEE64B6003B7774 /* WalletConnectDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA04FD2AEE64B6003B7774 /* WalletConnectDemoApp.swift */; };
 		A7CA05002AEE64B6003B7774 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CA04FF2AEE64B6003B7774 /* ContentView.swift */; };
 		A7CA05022AEE64B7003B7774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CA05012AEE64B7003B7774 /* Assets.xcassets */; };
@@ -29,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A74314A22B001C6700287437 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A74314A42B001C7100287437 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A74314A62B001D3900287437 /* AuthConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConnection.swift; sourceTree = "<group>"; };
+		A74314A82B00251300287437 /* DefaultCryptoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCryptoProvider.swift; sourceTree = "<group>"; };
 		A7CA04FA2AEE64B6003B7774 /* WalletConnectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletConnectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CA04FD2AEE64B6003B7774 /* WalletConnectDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDemoApp.swift; sourceTree = "<group>"; };
 		A7CA04FF2AEE64B6003B7774 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A74314A12B001C5700287437 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A74314A22B001C6700287437 /* AuthView.swift */,
+				A74314A42B001C7100287437 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		A7CA04F12AEE64B6003B7774 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +126,8 @@
 				A7CA05172AEE667A003B7774 /* WalletConnectManager.swift */,
 				A7CA05292AEE8B3E003B7774 /* DefaultSocketFactory.swift */,
 				A7CA05312AEEE0A6003B7774 /* SignConnection.swift */,
+				A74314A62B001D3900287437 /* AuthConnection.swift */,
+				A74314A82B00251300287437 /* DefaultCryptoProvider.swift */,
 			);
 			path = WalletConnect;
 			sourceTree = "<group>";
@@ -116,6 +135,7 @@
 		A7CA052B2AEE8D4F003B7774 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A74314A12B001C5700287437 /* Auth */,
 				A7CA052C2AEE8D58003B7774 /* Sign */,
 				A7CA04FF2AEE64B6003B7774 /* ContentView.swift */,
 			);
@@ -217,14 +237,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A74314A52B001C7100287437 /* AuthViewModel.swift in Sources */,
 				A7CA05322AEEE0A6003B7774 /* SignConnection.swift in Sources */,
 				A7CA05182AEE667A003B7774 /* WalletConnectManager.swift in Sources */,
 				A7CA05302AEE8E6C003B7774 /* SignViewModel.swift in Sources */,
 				A7CA052A2AEE8B3E003B7774 /* DefaultSocketFactory.swift in Sources */,
+				A74314A72B001D3900287437 /* AuthConnection.swift in Sources */,
 				A7CA05262AEE816B003B7774 /* Config.swift in Sources */,
 				A7CA052E2AEE8D64003B7774 /* SignView.swift in Sources */,
 				A7CA05002AEE64B6003B7774 /* ContentView.swift in Sources */,
 				A7CA04FE2AEE64B6003B7774 /* WalletConnectDemoApp.swift in Sources */,
+				A74314A32B001C6700287437 /* AuthView.swift in Sources */,
+				A74314A92B00251300287437 /* DefaultCryptoProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

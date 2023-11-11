@@ -8,10 +8,12 @@
 import Foundation
 import WalletConnectNetworking
 import WalletConnectPairing
+import Auth
 
 class WalletConnectManager {
     static func configure() {
         Networking.configure(projectId: Config.projectId, socketFactory: DefaultSocketFactory())
+        Auth.configure(crypto: DefaultCryptoProvider())
 
         let metadata = AppMetadata(
             name: "WalletConnectDemo",
